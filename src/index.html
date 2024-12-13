@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus Messias</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body class="flex flex-col">
+    <header id="inicio" class="w-full flex justify-center items-center bg-black h-[5rem]">
+        <div id="fadeMenu" class=" hidden pointer-events-auto fixed top-0 left-0 w-[100%] h-[100%] bg-black/60 z-10  opacity-0 transition-all duration-500 backdrop-blur-sm"></div>
+        <h1><img src="img/logo.svg" alt="" class="w-[6rem]"></h1>
+        <button id="openMenu" class=" flex justify-center items-center w-12 h-12  bg-Cyan rounded-md fixed top-4 right-5 z-30 shadow-md"><i class="fa-solid fa-bars text-[1.5rem] text-Silver"></i></button>
+        <div id="menuDropbox" class=" fixed top-0 right-6 w-fit z-20 opacity-0 pointer-events-none ease-in-out duration-1000">
+            <nav class="w-fit">
+                <ul class="flex flex-col justify-center items-start w-full backdrop:blur-xl list-none p-0 m-0">
+                    <li class="menu-link w-full flex justify-end items-center py-2 bg-opacity-95 shadow-sm"><a href="#inicio" class="text-Silver font-semibold font-poppins text-[1.2rem]">Início</a></li>
+                    <li class="menu-link w-full flex justify-end items-center py-2 bg-opacity-95"><a href="#sobre" class="text-Silver font-semibold font-poppins text-[1.2rem]">Sobre</a></li>
+                    <li class="menu-link w-full flex justify-end items-center py-2 bg-opacity-95"><a href="#trabalhos" class="text-Silver font-semibold font-poppins text-[1.2rem]">Trabalhos</a></li>
+                    <li class="menu-link w-full flex justify-end items-center py-2 bg-opacity-95"><a href="#aulas" class="text-Silver font-semibold font-poppins text-[1.2rem]">Aulas</a></li>
+                    <li class="menu-link w-full flex justify-end items-center py-2 bg-opacity-95"><a href="#hub" class="text-Silver font-semibold font-poppins text-[1.2rem]">Agenda</a></li>
+                    <li class="menu-link w-full flex justify-end items-center py-2 bg-opacity-95"><a href="#hub" class="text-Silver font-semibold font-poppins text-[1.2rem]">Fotos</a></li>
+                    <li class="menu-link w-full flex justify-end items-center py-2 bg-opacity-95"><a href="#contato" class="text-Silver font-semibold font-poppins text-[1.2rem]">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="bg-black">
+        <section  class="relative flex justify-center items-center">   <!--Hero Section-->
+            <img src="img/heroMobile.JPG" alt="" class="opacity-80">
+            <div class="absolute bottom-8 flex gap-8 px-3 py-1 rounded-xl bg-opacity-80 bg-Silver">
+                <div><a href="https://www.instagram.com/m_messias/"><i class="fa-brands fa-instagram text-[2rem] text-black"></i></a></div>
+                <div><a href="https://www.facebook.com/mateus.messias.3"><i class="fa-brands fa-facebook-square text-[2rem] text-black"></i></a></div>
+                <div><a href="https://www.tiktok.com/@mateusmessiasmusic?_t=8s4k21PmHDh&_r=1"><i class="fa-brands fa-tiktok text-[2rem] text-black"></i></a></div>
+            </div>
+        </section>
+        <section id="sobre" class="bg-[url('img/sobreBG.png')] bg-cover bg-center bg-no-repeat py-20 shadow-messias"> <!--Sobre Section-->
+            <div class="bg-black bg-opacity-70 mx-4 p-[1rem] rounded-2xl flex flex-col gap-[1.75rem]">
+                <h2 class="text-Grullo font-poppins text-[1.4rem] font-bold">Prazer, <span class="text-Cyan">Mateus Messias</span>!</h2>
+                <p class="text-Silver font-poppins text-[1.1rem] text-justify">Minha paixão pela música começou na infância e desde então já toquei em palcos como a Sala São Paulo e o Theatro São Pedro.</p>
+                <p class="text-Silver font-poppins text-[1.1rem] text-justify">Me formei em Flauta pela UFPel, fiz especialização na EMESP Tom Jobim e hoje curso mestrado na UNICAMP, pesquisando a obra de Nivaldo Ornelas. Além de me apresentar em grupos como o Quinteto Dona Niza, também ensino música, compartilhando minha experiência que une o erudito e o popular.</p>
+                <div class="flex justify-end"><button id="openSobre" class="text-Grullo font-poppins font-light">Mais sobre messias <i class="fa-solid fa-plus text-black bg-Cyan px-2 py-2 rounded-full"></i></button></div>
+               
+            </div>
+            <div id="fade" class=" hidden pointer-events-auto fixed top-0 left-0 w-[100%] h-[100%] bg-gray-800/70 z-10  opacity-0 transition-all duration-500 backdrop:backdrop-blur-2xl"></div>
+            <div id="sobreModal" class="hidden pointer-events-auto fixed left-[50%] top-[50%] bg-white -translate-x-[50%] -translate-y-[50%] z-20 h-[65vh] w-[500px] max-w-[90%] p-[1.2rem] rounded-md opacity-0 scale-75 transition-all duration-500 overflow-auto border-y-[2rem] border-white">
+                <h3 class="text-Cyan font-poppins text-[1.125rem] font-light mb-4">mais sobre <br> <span class="text-Grullo font-poppins text-[1.875rem] font-bold">Mateus Messias</span></h3>
+                <p class="text-black font-poppins text-[1.2rem]">Natural de Jundiaí, no interior de São Paulo, Mateus Messias é flautista, compositor e professor, com uma carreira que transita entre a música erudita e a popular. Seu contato com a flauta começou ainda na infância, aos 7 anos, na Escola de Música de Jundiaí e no Projeto Guri, onde rapidamente se destacou ao integrar o Grupo de Referência - Orquestra Sinfônica, se apresentando em renomados palcos brasileiros, como o Theatro São Pedro, o Teatro Polytheama e a Sala São Paulo.</p>
+                <hr class="border-Silver my-8">
+                <p class="text-black font-poppins text-[1.2rem]">Sua trajetória acadêmica seguiu na Escola de Música do Estado de São Paulo – EMESP Tom Jobim e ao longo de sua formação, Mateus teve aulas com grandes nomes da música brasileira, como Eduardo Neves, Vinícius Dorin e Realcino Lima (Nenê). 
+                Em 2015, se mudou para Pelotas, no Rio Grande do Sul, para cursar o Bacharelado em Música na Universidade Federal de Pelotas, onde foi orientado pelo Prof. Dr. Raul Costa d'Avila.
+                Durante sua graduação, participou de importantes festivais e masterclasses com ícones da flauta como Emmanuel Pahud (SUI), Christie Beard (EUA) e Celso Woltzenlogel (BRA), além de trabalhar com diversos professores e músicos de destaque mundial. Seu envolvimento com a pesquisa acadê- mica também o levou a publicações nos anais dos Congressos de Iniciação Científica da UFPel, sendo premiado como "destaque" em 2018. Nesse mesmo ano, apresentou seus trabalhos no Festival Internacional de Flautistas da ABRAF.</p>
+                <hr class="border-Silver my-8">
+                <p class="text-black font-poppins text-[1.2rem]">Ao longo da carreira, Mateus explorou diversas formações musicais, desde duos com piano e violão até apresentações com orquestras e bandas sinfônicas. Destacam-se sua atuação no Festival Internacional Sesc de Música de Pelotas e na Orquestra de Flautas do Festival Internacional de Flautistas da ABRAF. Na música popular, sua participação no grupo de música medieval "A Barda" e no quinteto de jazz e música brasileira MAGA lhe proporcionaram experiências importantes, incluindo a abertura do Thorhammerfest, um dos maiores festivais de cultura nórdica do Brasil.
+                Graduado pela Universidade Federal de Pelotas, Mateus retornou a Jundiaí em 2020, onde continua a carreira como músico profissional, realizando apresentações e lecionando para diversos alunos. Em 2022, concluiu sua Especialização em Flauta Transversal pela EMESP Tom Jobim, com orienta- ção de Marta Ozzetti e Edmilson Capelupi.
+                Entre os anos de 2022 e 2024, Mateus integrou a Orquestra Sinfônica Municipal de Jundiaí, sob regência da maestrina Cláudia Feres e atualmente cursa o Mestrado em Música pela UNICAMP, sob orientação da Prof. Dr. Thais Lima Nicodemo, com pesquisa dedicada à obra para flauta de Nivaldo Ornelas.
+                Seu mais recente trabalho vem sendo realizado com o Quinteto Dona Niza, grupo voltado para música instrumental principalmente brasileira</p>
+                <a href="#sobre" id="closeSobre" class=" text-Grullo font-poppins text-[1.125rem] text-right block"><i class="fa-solid fa-xmark text-Cyan mr-2 mt-4"></i>fechar</a>
+            </div>
+        </section>
+        <section id="trabalhos" class="md:hidden flex flex-col gap-8 w-full py-20 px-4">  <!--Trabalho Section-->
+            <h3 class="text-Cyan font-poppins text-[1.5rem] font-semibold">Trabalhos</h3>
+            <div class="w-full flex flex-col justify-center items-center gap-4 border-b pb-5 border-Silver">
+                <a href="https://www.youtube.com/watch?v=VWYdcR_10dE" class="relative"><i class="fa-brands fa-youtube text-[5rem] text-red-700 absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] shadow-2xl opacity-90"></i><img src="img/thumb1.jpg" alt="" class="rounded-md border-4 border-Silver"></a>
+                <div class="flex flex-col gap-2 m-1 ">
+                    <h4 class="w-full text-Grullo font-poppins text-[1.2rem] font-semibold ">Mater</h4>
+                    <p class="text-Silver font-poppins text-[1rem] font-light">Participação especial tocando flauta na obra de Gabriel Faro.</p>
+                </div>
+            </div>
+            <div class="w-full flex flex-col justify-center items-center gap-4 border-b pb-5 border-Silver">
+                <a href="https://www.youtube.com/watch?v=OmDw_xJTSuU" class="relative"><i class="fa-brands fa-youtube text-[5rem] text-red-700 absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] shadow-2xl opacity-90"></i><img src="img/thumb2.jpg" alt="" class="rounded-md border-4 border-Silver"></a>
+                <div class="flex flex-col gap-2 m-1 ">
+                    <h4 class="w-full text-Grullo font-poppins text-[1.2rem] font-semibold ">I Vivace Spirituoso</h4>
+                    <p class="text-Silver font-poppins text-[1rem] font-light">Uma interpretação da Orquestra Sinfônica Municipal de Jundiaí que celebra a riqueza musical de Osvaldo Lacerda. </p>
+                </div>
+            </div>
+            <div class="w-full flex flex-col justify-center items-center gap-4 pb-5"> 
+                <a href="https://www.youtube.com/watch?v=OmDw_xJTSuU" class="relative"><i class="fa-brands fa-youtube text-[5rem] text-red-700 absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] shadow-2xl opacity-90"></i><img src="img/thumb3.jpg" alt="" class="rounded-md border-4 border-Silver"></a>
+                <div class="flex flex-col gap-2 m-1 ">
+                    <h4 class="w-full text-Grullo font-poppins text-[1.2rem] font-semibold ">Naima (John Coltrane)</h4>
+                    <p class="text-Silver font-poppins text-[1rem] font-light">Uma homenagem ao gênio do jazz, John Coltrane. Uma performance inesquecível com o Quinteto Maga</p>
+                </div>
+            </div> 
+            <p class="w-full flex justify-end"><a href="https://www.youtube.com/@mateusmessias11" class="text-Grullo font-poppins font-light">Mais trabalhos <span class="bg-Cyan py-1 px-2 rounded-full"><i class="fa-solid fa-plus text-black"></i></span></a></p>
+        </section>
+        <section id="aula" class=" flex flex-col py-20 px-4 gap-8 bg-Silver shadow-messias"> <!--Aulas Section-->
+            <h3 class="text-Cyan font-poppins text-[1.5rem] font-semibold">Aulas e Workshop <br> <span class="text-black font-light">com</span> <span class="text-black">Mateus Messias</span></h3>
+            <p class="text-black font-poppins text-[1.2rem] ">Aprenda flauta transversal com um professor experiente, que une técnica refinada e musicalidade para atender tanto iniciantes quanto músicos avançados. </p>
+            <img src="img/aulasFotos.jpg" alt="" class="rounded-md shadow-sm">
+            
+            <a href="" class="bg-Grullo flex justify-center items-center w-full py-2 rounded-full text-black text-[1.125rem] font-poppins font-semibold"><i class="fa-brands fa-whatsapp text-[1.4rem] mr-2 text-black"></i> Entre em contato</a>
+            
+        </section>
+
+        <section id="hub" class="bg-Grullo relative h-[20rem] flex flex-col justify-center items-center gap-8 "> <!--hub section-->
+            <video src="video/video.mp4" autoplay disablePictureInPicture muted class="absolute sepia bg-blend-overlay opacity-20 h-[20rem] object-cover"></video>
+            <a href="#" class=" w-[13rem] h-[4rem] bg-Cyan flex justify-center items-center rounded-xl text-black font-poppins font-bold shadow-sm opacity-90">Agenda</a>
+            <a href="#" id="openFotos" class=" w-[13rem] h-[4rem] bg-Cyan flex justify-center items-center rounded-xl text-black font-poppins font-bold shadow-sm opacity-90">Fotos</a>
+            
+            <div id="fadeFotos" class="hidden opacity-0 pointer-events-auto fixed top-0 left-0 w-[100%] h-[100%] bg-black/70 z-10   transition-all duration-500 backdrop:backdrop-blur-2xl"></div>
+
+            <div id="modalFotos" class="hidden opacity-0 scale-75 pointer-events-auto fixed left-[50%] top-[50%] bg-Silver -translate-x-[50%] -translate-y-[50%] z-20 h-[80vh] w-[500px] max-w-[90%] p-[1.2rem] rounded-md  transition-all duration-500 overflow-scroll border-y-[2rem] border-Silver">
+                <div><img src="img/mm1.jpg" alt="" class="rounded-md mb-8 shadow-md"></div>
+                <div><img src="img/mm2.webp" alt="" class="rounded-md mb-8 shadow-md"></div>
+                <div><img src="img/mm3.jpg" alt="" class="rounded-md mb-8 shadow-md"></div>
+                <div><img src="img/mm4.jpg" alt="" class="rounded-md mb-8 shadow-md"></div>
+                <div><img src="img/mm5.jpg" alt="" class="rounded-md mb-8 shadow-md"></div>
+                <div><img src="img/mm6.jpg" alt="" class="rounded-md mb-8 shadow-md"></div>
+                <div><img src="img/mm7.jpg" alt="" class="rounded-md mb-8 shadow-md"></div>
+                <div><img src="img/mm8.jpg" alt="" class="rounded-md mb-8 shadow-md"></div>
+                <div><img src="img/mm9.jpg" alt="" class="rounded-md mb-8 shadow-md"></div> 
+                <p id="closeFotos" class="flex justify-center items-center  z-30 "><a href="" class="text-Cyan text-[1.2rem] font-poppins bg-black flex w-12 h-12 justify-center items-center rounded-full"><i class="fa-solid fa-xmark text-[1.5remd]"></i></a></p>
+            </div>
+        </section>    
+        <section id="contato" class="bg-Cyan py-20 px-4 flex flex-col gap-4 shadow-messias"> <!--contato section-->
+            <h3 class=" text-black font-poppins text-[1.5rem] font-semibold">Vamos conversar?</h3>
+            <form action="https://formsubmit.co/email.tato@gmail.com" method="post" class="flex flex-col gap-4">
+                <div>
+                    <label for="" class="text-black font-poppins text-[1.125rem]">Nome</label>
+                    <div class="flex bg-Silver justify-start items-center w-full h-[2rem] rounded-md">
+                        <i class="fa-solid fa-user text-Cyan mx-2"></i><input required type="text" id="Nome" name="Nome" placeholder="Digite seu nome" class= "placeholder:text-Cyan bg-Silver font-poppins text-[1.125rem] w-[95%] focus:outline-none">
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="" class="text-black font-poppins text-[1.125rem]">Email</label>
+                    <div class="flex justify-start items-center w-full h-[2rem] rounded-md bg-Silver">
+                        <i class="fa-solid fa-envelope text-Cyan mx-2"></i><input required type="email" id="email" name="email" placeholder="Digite seu email" class="placeholder:text-Cyan font-poppins text-[1.125rem] w-[95%] focus:outline-none bg-Silver">
+                    </div>
+                </div>
+                <div>
+                    <label for="" class="text-black font-poppins text-[1.125rem]">Messagem</label>
+                    <textarea required name="messagem" id="messagem" class="bg-Silver text-Cyan font-poppins text-[1rem] p-2 rounded-md w-[100%] h-[11rem]">Digite sua mensagem</textarea>
+                </div>
+                <div class="flex justify-between items-center">
+                    <button type="submit" class="flex justify-center items-center w-[10rem] h-[2rem] bg-black rounded-md text-Cyan font-poppins text-[1.125rem] font-semibold py-6 ">Enviar</button>
+                    <button type="reset" class="flex justify-center items-center w-[10rem] h-[2rem] bg-Cyan rounded-md text-black font-poppins text-[1.125rem] font-semibold border border-Silver py-6">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-black flex flex-col justify-center items-center gap-8">
+        <h1><img src="img/logo.svg" alt="" class="mt-[1rem] py-[1.25rem]"></h1>
+        <div class="flex gap-8">
+            <div><a href=""><i class="fa-brands fa-instagram text-[2rem] text-Silver"></i></a></div>
+            <div><i class="fa-brands fa-facebook-square text-[2rem] text-Silver"></i></div>
+            <div><i class="fa-brands fa-tiktok text-[2rem] text-Silver"></i></div>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-2">
+            <h5 class="text-center text-Silver font-poppins text-[1.125rem] font-light">© 2024 Matheus Messias.<br> Todos os direitos reservados.</h5>
+            <p class="text-Silver font-poppins font-extralight text-[1rem]">Desenvolvido por Tácio Würdig</p>
+        </div>
+    </footer>
+</body>
+</html>
