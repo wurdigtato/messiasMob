@@ -12,29 +12,67 @@
     <script src="./script.js" defer></script>
 </head>
 <body class="">
-    <header class="bg-preto flex justify-center">
-        <div class="flex gap-4 p-8">
-            <img src="images/logo.svg" alt="logo simbolo Mateus MessiasMessias" class="w-[2rem]">
-            <img src="images/logotype.svg" alt="logotipo texto Mateus Messias" class="w-[5rem]">
-        </div>
-        <!-- <button id="menu-button" class="bg-cinza w-[8rem] h-[8rem] rounded-3xl fixed top-[3.5rem] right-[3rem] opacity-80 shadow-md 
-         z-20"> 
-            <i id="menu-button-icon" class="fa-solid fa-bars text-[4.125rem] text-ciano transition-transform"></i>
-        </button>
-        <div id="menu-fade" class="fixed opacity-0 top-0 left-0 bg-preto/80 w-full h-full duration-500 ease-in-out backdrop-blur-sm z-10"></div>
-        <div id="menu-container" class="opacity-0 fixed top-[16rem] right-[5rem] duration-700 ease-out z-20">
+    <header class="bg-preto w-full flex justify-center">
+        <div class="w-[80%] flex justify-between items-center">
+            <div class="flex gap-4 py-4">
+                <img src="images/logo.svg" alt="logo icone Mateus Messias" class="w-[2rem]">
+                <img src="images/logotype.svg" alt="logo texto Mateus Messias" class="w-[8rem]">
+            </div>
             <nav>
-                <ul class="flex flex-col gap-4">
-                    <li><a href="" class="text-ciano font-poppins text-[4.125rem] font-medium">Inicio</a></li>
-                    <li><a href="" class="text-ciano font-poppins text-[4.125rem] font-medium">Sobre</a></li>
-                    <li><a href="" class="text-ciano font-poppins text-[4.125rem] font-medium">Trabahos</a></li>
-                    <li><a href="" class="text-ciano font-poppins text-[4.125rem] font-medium">Aulas</a></li>
-                    <li><a href="" class="text-ciano font-poppins text-[4.125rem] font-medium">Agenda</a></li>
-                    <li><a href="" class="text-ciano font-poppins text-[4.125rem] font-medium">Fotos</a></li>
-                    <li><a href="" class="text-ciano font-poppins text-[4.125rem] font-medium">Contato</a></li>
+                <ul class="flex gap-6">
+                    <li><a href="#" class="text-cinza hover:text-ciano font-poppins text-[1.125rem] font-medium duration-300 ease-in-out">Início</a></li>
+                    <li><a href="#sobre" class="text-cinza hover:text-ciano font-poppins text-[1.125rem] font-medium duration-300 ease-in-out">Sobre</a></li>
+                    <li><a href="#" class="text-cinza hover:text-ciano font-poppins text-[1.125rem] font-medium duration-300 ease-in-out">Aulas</a></li>
+                    <li><a href="#" class="text-cinza hover:text-ciano font-poppins text-[1.125rem] font-medium duration-300 ease-in-out">Trabalhos</a></li>
+                    <li><a href="#" class="text-cinza hover:text-ciano font-poppins text-[1.125rem] font-medium duration-300 ease-in-out">Agenda</a></li>
+                    <li><a href="#" class="text-cinza hover:text-ciano font-poppins text-[1.125rem] font-medium duration-300 ease-in-out">Fotos</a></li>
+                    <li><a href="#" class="text-cinza hover:text-ciano font-poppins text-[1.125rem] font-medium duration-300 ease-in-out">Contato</a></li>
                 </ul>
             </nav>
-        </div>-->
-       </header>
+        </div>
+    </header>
+    <main>
+        <section id="hero" class="p-[5rem] bg-black">
+            <img src="images/hero.png" alt="foto de Mateus na orquestra municipal de jundiaí" class="object-cover">
+        </section>
+        <section class="bg-grullo flex justify-center items-center p-4 gap-8">
+            <h2 class="text-preto text-[1.5rem] font-raleway font-light uppercase"><span class="font-semibold">Siga-me</span> para mais conteúdo exclusivo</h2>
+            <div class="flex justify-start">
+                <ul class="flex items-center justify-around bg-cinza w-[12rem] h-[3rem] rounded-full">
+                    <li><a href=""><i class="fa-brands fa-square-facebook text-preto hover:text-ciano hover:scale-110 duration-300 ease-in text-[2rem] "></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram text-preto hover:text-ciano hover:scale-110  duration-300 ease-in text-[2rem]"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-tiktok text-preto hover:text-ciano hover:scale-110  duration-300 ease-in text-[2rem]"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="sobre" class="flex justify-center gap-[20rem] items-end py-[5rem] bg-[url('images/bg-sobre.jpg')] bg-center bg-cover bg-no-repeat inner-shadow">
+            <div class="w-[40rem] bg-preto/60 rounded-xl flex flex-col gap-[1.5rem] p-8">
+                <h3 class="text-ciano font-poppins text-[2rem] font-bold"><span class="text-grullo">Prazer,</span> Mateus Messias</h3>
+                <p class="text-cinza text-[1.375rem] font-poppins text-justify">Minha paixão pela música começou na infância e desde então já toquei em palcos como a Sala São Paulo e o Theatro São Pedro.</p>
+                <p class="text-cinza text-[1.375rem] font-poppins text-justify">Me formei pela UFPel, fiz especialização na EMESP Tom Jobim e hoje curso mestrado na UNICAMP, pesquisando a obra de Nivaldo Ornelas. Além de me apresentar em grupos como o Quinteto Dona Niza, também ensino música, compartilhando minha experiência que une o erudito e o popular.</p>
+                <p class="w-full flex justify-end "><button id="sobre-modal-open" class="text-grullo text-[1.3rem] font-poppins font-light text-right cursor-pointer">Mais sobre messias <i class="fa-solid fa-plus bg-ciano text-preto p-2 rounded-full"></i></button></p>
+            </div>
+            <div class="">
+                <img src="images/messias-sobre.svg" alt="" class="w-[25em]">
+            </div>
+            <div id="sobre-fade" class="opacity-0 pointer-events-none fixed w-full h-full bg-preto/80 top-0 left-0 z-10 duration-700 ease-in-out"></div>
+            <div id="sobre-modal" class="opacity-0 flex flex-col gap-8 w-[60%] h-[80vh] bg-cinza/80 fixed top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] rounded-xl p-12 overflow-y-scroll overflow-x-hidden backdrop:blur-lg pointer-events-none z-20 shadow-lg duration-700 scale-95 ease-in-out">
+                <div class="flex justify-between items-center bg-cinza px-8 py-3 rounded-lg ">
+                    <div class="flex flex-col">
+                        <span class="text-ciano text-[1.125rem] font-medium">Mais sobre</span>
+                        <h4 class="text-grullo text-[2rem] font-poppins font-semibold">Mateus Messias</h4>
+                    </div>
+                    <button id="sobre-modal-close" class="w-[3rem] h-[3rem] bg-ciano rounded-full opat"><i class="fa-solid fa-xmark text-cinza text-[2rem]"></i></button>
+                </div>
+                <p class="text-preto text-[1.5rem] font-poppins font-normal text-justify">Natural de Jundiaí, no interior de São Paulo, Mateus Messias é flautista, compositor e professor, com uma carreira que transita entre a música erudita e a popular. Seu contato com a flauta começou ainda na infância, aos 7 anos, na Escola de Música de Jundiaí e no Projeto Guri, onde rapidamente se destacou ao integrar o Grupo de Referência - Orquestra Sinfônica, se apresentando em renomados palcos brasileiros, como o Theatro São Pedro, o Teatro Polytheama e a Sala São Paulo.</p>
+                <p class="text-preto text-[1.5rem] font-poppins font-normal text-justify">Sua trajetória acadêmica seguiu na Escola de Música do Estado de São Paulo – EMESP Tom Jobim e ao longo de sua formação, Mateus teve aulas com grandes nomes da música brasileira, como Eduardo Neves, Vinícius Dorin e Realcino Lima (Nenê). 
+                Em 2015, se mudou para Pelotas, no Rio Grande do Sul, para cursar o Bacharelado em Música na Universidade Federal de Pelotas, onde foi orientado pelo Prof. Dr. Raul Costa d'Avila.
+                Durante sua graduação, participou de importantes festivais e masterclasses com ícones da flauta como Emmanuel Pahud (SUI), Christie Beard (EUA) e Celso Woltzenlogel (BRA), além de trabalhar com diversos professores e músicos de destaque mundial. Seu envolvimento com a pesquisa acadê- mica também o levou a publicações nos anais dos Congressos de Iniciação Científica da UFPel, sendo premiado como "destaque" em 2018. Nesse mesmo ano, apresentou seus trabalhos no Festival Internacional de Flautistas da ABRAF.</p>
+                <p class="text-preto text-[1.5rem] font-poppins font-normal text-justify">Sua trajetória acadêmica seguiu na Escola de Música do Estado de São Paulo – EMESP Tom Jobim e ao longo de sua formação, Mateus teve aulas com grandes nomes da música brasileira, como Eduardo Neves, Vinícius Dorin e Realcino Lima (Nenê). 
+                Em 2015, se mudou para Pelotas, no Rio Grande do Sul, para cursar o Bacharelado em Música na Universidade Federal de Pelotas, onde foi orientado pelo Prof. Dr. Raul Costa d'Avila.
+                Durante sua graduação, participou de importantes festivais e masterclasses com ícones da flauta como Emmanuel Pahud (SUI), Christie Beard (EUA) e Celso Woltzenlogel (BRA), além de trabalhar com diversos professores e músicos de destaque mundial. Seu envolvimento com a pesquisa acadê- mica também o levou a publicações nos anais dos Congressos de Iniciação Científica da UFPel, sendo premiado como "destaque" em 2018. Nesse mesmo ano, apresentou seus trabalhos no Festival Internacional de Flautistas da ABRAF.   </p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

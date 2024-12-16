@@ -2,16 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-#menu-button-icon {
-    transition: transform 0.7s ease-in-out, opacity 0.4s ease-in-out; /* Suaviza a rotação */
+.inner-shadow {
+    box-shadow: 0px 0px 30.5px 0px rgba(0, 0, 0, 0.50) inset;
 }
 
-.rotate-icon {
-    transform: rotate(45deg);
-     /* Gira suavemente 45° */
+/* Estilizando a barra de rolagem para navegadores baseados em WebKit */
+#sobre-modal::-webkit-scrollbar {
+    width: 5px;/* Largura da barra vertical */
+    height: 10px; /* Altura da barra horizontal (se aplicável) */
 }
 
-.icon-moving {
-    filter: blur(14px);
-    /* transform: translateX(1000px); */
+#sobre-modal::-webkit-scrollbar-track {
+    background: #B9B6B5; /* Cor do fundo da barra */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+#sobre-modal::-webkit-scrollbar-thumb {
+    background: #62929E; /* Cor do controle deslizante */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+#sobre-modal::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Cor do controle deslizante ao passar o mouse */
 }

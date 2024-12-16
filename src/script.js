@@ -1,41 +1,43 @@
-//Menu
+const sobre = document.getElementById('sobre-modal')
+const sobreOpen = document.getElementById('sobre-modal-open')
+const sobreClose = document.getElementById('sobre-modal-close')
+const sobreFade = document.getElementById('sobre-fade')
 
-const menu = document.getElementById('menu-container')
-const menuButton = document.getElementById('menu-button')
-const menuIcon = document.getElementById('menu-button-icon')
-const fade = document.getElementById('menu-fade')
+//Sobre Modal
+function toggleModalSobre() {
+    sobre.classList.toggle('opacity-0')
+    sobre.classList.toggle('opacity-100')
+    sobre.classList.toggle('scale-105')
+    sobre.classList.toggle('scale-95')
+    sobre.classList.toggle('pointer-events-none')
+    sobre.classList.toggle('pointer-events-auto')
+    
+    document.body.classList.toggle('overflow-hidden')
+}
 
-//Abrir e Fechar Botão
-menuButton.addEventListener('click', () => {
-    setTimeout(() => {
-        menu.classList.toggle('opacity-0')
-        menu.classList.toggle('opacity-100')
-        menu.classList.toggle('pointer-events-none')
-        menu.classList.toggle('pointer-events-auto')
-    }, 300)
+function toggleFade(){
+    sobreFade.classList.toggle('opacity-0')
+    sobreFade.classList.toggle('opacity-100')
+    sobreFade.classList.toggle('pointer-events-none')
+    sobreFade.classList.toggle('pointer-events-auto')
+}
+
+sobreOpen.addEventListener('click', () => {
+    toggleModalSobre()
+    toggleFade()
+})
+sobreClose.addEventListener('click', () => {
+    toggleModalSobre()
+    toggleFade()
 })
 
-//Mudar icone botão
-menuButton.addEventListener('click', () => {
-    menuIcon.classList.toggle('rotate-icon')
-    menuIcon.classList.add('icon-moving')
-
-    if(menuIcon.classList.contains('fa-bars')){
-        menuIcon.classList.remove('fa-bars')
-        menuIcon.classList.add('fa-xmark')
-    } else {
-        menuIcon.classList.remove('fa-xmark')
-        menuIcon.classList.add('fa-bars')
+sobreFade.addEventListener('click', (event) => {
+    if(event.target === sobreFade) {
+        toggleModalSobre()
+        toggleFade()
     }
-
-    setTimeout(() => {
-        menuIcon.classList.remove('icon-moving')
-    }, 10)
 })
 
-menuButton.addEventListener('click', () => {
-    fade.classList.toggle('opacity-0')
-    fade.classList.toggle('opacity-100')
-})
+// ----- 
 
 
