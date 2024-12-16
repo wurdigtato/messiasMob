@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#menu-button-icon {
+    transition: transform 0.7s ease-in-out, opacity 0.4s ease-in-out; /* Suaviza a rotação */
+}
+
+.rotate-icon {
+    transform: rotate(45deg); /* Gira suavemente 45° */
+}

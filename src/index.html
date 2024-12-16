@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="./script.js" defer></script>
 </head>
 <body class="">
     <header class="bg-preto flex justify-center">
@@ -16,16 +17,24 @@
             <img src="images/logo.svg" alt="logo simbolo Mateus MessiasMessias" class="w-[7rem]">
             <img src="images/logotype.svg" alt="logotipo texto Mateus Messias" class="w-[22rem]">
         </div>
-        <button class="bg-cinza w-[8rem] h-[8rem] rounded-3xl fixed top-[3.5rem] right-[3rem] "> <!--BOTÃO MENU-->
-            <i class="fa-solid fa-bars text-[4.125rem] text-ciano"></i>
+        <button id="menu-button" class="bg-cinza w-[8rem] h-[8rem] rounded-3xl fixed top-[3.5rem] right-[3rem] opacity-80 shadow-md
+         z-20"> <!--BOTÃO MENU-->
+            <i id="menu-button-icon" class="fa-solid fa-bars text-[4.125rem] text-ciano transition-opacity"></i>
         </button>
-        <div>
+        <div id="menu-fade" class="fixed opacity-0 top-0 left-0 bg-preto/80 w-full h-full duration-700 ease-in-out backdrop-blur-sm z-10"></div>
+        <div id="menu-container" class="opacity-0 fixed top-[16rem] right-[5rem] duration-500 ease-out z-20">
             <nav>
-                <ul>
-                    <li><a href="">Inicio</a></li>
+                <ul class="flex flex-col gap-4">
+                    <li><a href="" class="text-ciano font-poppins text-[4rem] font-medium">Inicio</a></li>
+                    <li><a href="" class="text-ciano font-poppins text-[4rem] font-medium">Sobre</a></li>
+                    <li><a href="" class="text-ciano font-poppins text-[4rem] font-medium">Trabahos</a></li>
+                    <li><a href="" class="text-ciano font-poppins text-[4rem] font-medium">Aulas</a></li>
+                    <li><a href="" class="text-ciano font-poppins text-[4rem] font-medium">Agenda</a></li>
+                    <li><a href="" class="text-ciano font-poppins text-[4rem] font-medium">Fotos</a></li>
+                    <li><a href="" class="text-ciano font-poppins text-[4rem] font-medium">Contato</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
+       </header>
 </body>
 </html>
