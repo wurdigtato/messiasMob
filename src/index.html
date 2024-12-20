@@ -139,7 +139,7 @@
             </div>
         </section>
         <!--Trabalhos-->
-        <section class="bg-fixed bg-center bg-cover bg-no-repeat py-16 px-[19rem] flex flex-col items-start justify-center gap-12 relative " style="background-image:url('images/bg-trabalhos.png');">
+        <section class="bg-fixed bg-center bg-cover bg-no-repeat py-16 px-[10rem] flex flex-col items-start justify-center gap-12 relative " style="background-image:url('images/bg-trabalhos.png');">
             <div class="bg-grullo/70 bg-blend-color w-full h-full top-0 left-0 absolute -z-0"></div>
             <div class="z-20 bg-cinza/60 w-full rounded-md p-3">
                 <h2 class="text-Preto text-[2rem] font-poppins font-semibold">Trabalhos</h2>
@@ -189,26 +189,32 @@
                 <a href=""><h3 class="text-cinza text-[2.5rem] font-raleway font-bold uppercase">Acompanhe a Agenda</h3> <p class="text-cinza text-[1.125rem] font-poppins font-normal"><span class="font-bold">Clique aqui</span> e fiquei por dentro das apresentações e eventos de Mateus Messias.</p></a>
         </section>
         <!--Fotos-->
-        <section class="bg-ciano py-[10rem] px-[12rem] flex flex-col gap-[9rem] items-center justify-center">
-            <div class="flex justify-center gap-10">
+        <section class="bg-ciano py-[10rem] px-[8rem] flex flex-col ">
+            <div class="flex justify-evenly gap-10">
                 <div class="flex flex-col">
                     <h3 class="text-preto text-[4rem] font-poppins font-bold">Fotos</h3>
                     <p class="text-cinza text-[1.3rem] font-poppins font-medium">Veja a música ganhar forma</p>
                     <a href="" class=" flex justify-start items-center gap-3 text-preto text-[2rem] font-poppins font-medium">Para <span class="font-bold text-cinza">+</span>fotos <i class="fa-brands fa-instagram text-cinza rounded-md"></i></a>
                 </div>
-                <div class="w-[55%] ">
-                    <div class="mosaic bg-cinza/40 rounded-md p-4">
-                        <a href=""><img src="images/mm1.jpg" alt="" class="item"></a>
-                        <a href=""><img src="images/mm3.jpg" alt="" class="item"></a>
-                        <a href=""><img src="images/mm2.jpg" alt="" class="item"></a>
-                        <a href=""><img src="images/mm5.jpg" alt="" class="item "></a>
-                        <a href=""><img src="images/mm4.jpg" alt="" class="item "></a>
-                        <a href=""><img src="images/mm10.webp" alt="" class="item"></a>
-                        <a href=""><img src="images/mm6.jpg" alt="" class="item"></a>
-                        <a href=""><img src="images/mm9.jpg" alt="" class="item"></a>
-                        <a href=""><img src="images/mm11.jpg" alt="" class="item"></a>
-                        <a href=""><img src="images/mm7.jpg" alt="" class="item"></a>
-                        <a href=""><img src="images/mm8.jpg" alt="" class="item"></a>
+                <div class="w-fit relative">
+                    <div class="bg-cinza/40 p-4 flex flex-col items-center justify-center rounded-xl gap-2" id="container-foto">
+                        <div class="flex gap-2 relative">
+                            <a href="#" ><img src="images/mm1.jpg" alt="" class="w-[250px] h-[180px] object-cover object-top rounded-xl hover:scale-105 duration-500 ease-in hover:shadow-md shadow-preto/80"></a>
+                            <a href="#"><img src="images/mm2.jpg" alt="" class="w-[250px] h-[180px] object-cover object-top rounded-xl hover:scale-105 duration-500 ease-in hover:shadow-md shadow-preto/80"></a>
+                            <a href="#"><img src="images/mm3.jpg" alt="" class="w-[250px] h-[180px] object-cover object-top rounded-xl hover:scale-105 duration-500 ease-in hover:shadow-md shadow-preto/80"></a>
+                        </div>
+                        <div class="flex gap-2 ">
+                            <a href="#"><img src="images/mm4.jpg" alt="" class="w-[250px] h-[180px] object-cover object-top rounded-xl hover:scale-105 duration-500 ease-in hover:shadow-md shadow-preto/80"></a>
+                            <a href="#"><img src="images/mm5.jpg" alt="" class="w-[250px] h-[180px] object-cover object-top rounded-xl hover:scale-105 duration-500 ease-in hover:shadow-md shadow-preto/80"></a>
+                            <a href="#"><img src="images/mm6.jpg" alt="" class="w-[250px] h-[180px] object-cover object-top rounded-xl hover:scale-105 duration-500 ease-in hover:shadow-md shadow-preto/80"></a>
+                        </div>
+                        <div class="flex gap-2 ">
+                           <a href="#"> <img src="images/mm7.jpg" alt="" class="w-[250px] h-[180px] object-cover object-top rounded-xl hover:scale-105 duration-500 ease-in hover:shadow-md shadow-preto/80"></a>
+                            <a href="#"><img src="images/mm10.webp" alt="" class="w-[250px] h-[180px] object-cover object-top rounded-xl hover:scale-105 duration-500 ease-in hover:shadow-md shadow-preto/80"></a>
+                            <a href="#"><img src="images/mm9.jpg" alt="" class="w-[250px] h-[180px] object-cover object-top rounded-xl hover:scale-105 duration-500 ease-in hover:hadow-md shadow-preto/80"></a>
+                        </div>
+                        <div class="absolute w-full h-full pointer-events-none flex justify-center  transition-opacity duration-500" id="foto-open"></div>
+                        <div id="foto-fade" class="absolute w-full h-full bg-black/80  opacity-0 pointer-events-none flex justify-center "></div>
                     </div>
                 </div>
             </div>
@@ -239,5 +245,8 @@
             </form>
         </section>
     </main>
+    <footer>
+
+    </footer>
 </body>
 </html>

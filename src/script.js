@@ -40,4 +40,45 @@ sobreFade.addEventListener('click', (event) => {
 
 // ----- 
 
+//Open Foto
 
+const thumbnails = document.querySelectorAll('#container-foto img')
+
+const fotoOpen = document.getElementById('foto-open')
+
+thumbnails.forEach(thumbnails => {
+    thumbnails.addEventListener('click', (e) => {
+        e.preventDefault()
+
+        const imgSrc = thumbnails.src 
+        
+        fotoOpen.innerHTML = `
+                <img src="${imgSrc}" alt="Foto ampliada" class="max-w-full max-h-full rounded-lg z-20 ">
+                <button onclick="closeFoto()" class="z-20 absolute top-5 right-5 text-white text-2xl bg-ciano/50 w-[2rem] h-[2rem] rounded-full"><i class="fa-solid fa-xmark"></i></button>
+            `
+
+            fotoOpen.classList.remove('pointer-events-none');
+            toggleFadeFoto()
+    })
+})
+
+function closeFoto() {
+    fotoOpen.innerHTML = ''
+    fotoOpen.classList.add('pointer-events-none');
+    toggleFadeFoto()
+}
+
+const fadeFoto = document.getElementById('foto-fade')
+
+function toggleFadeFoto(){
+    fadeFoto.classList.toggle('opacity-0')
+    fadeFoto.classList.toggle('opacity-100')
+    fadeFoto.classList.toggle('pointer-events-none')
+    fadeFoto.classList.toggle('pointer-events-auto')
+}
+
+fadeFoto.addEventListener('click', (event) => {
+    if(event.target === fadeFoto){
+        closeFoto()
+    }
+})
