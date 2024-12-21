@@ -132,9 +132,9 @@
                        </div>
                     </div>
                 </div>
-                <div class="w-full flex flex-col justify-center items-center ">
+                <div class="w-full flex flex-col justify-center items-center gap-4 ">
                     <p class="text-preto text-[1.125rem] font-poppins font-light">marque sua <span class="text-ciano text-[1.5rem] font-normal capitalize underline">aula</span> agora</p>
-                    <a href="" class="flex justify-center items-center gap-2 w-[18rem] h-[3rem] text-[1.125rem] font-raleway font-bold rounded-full text-ciano hover:text-preto bg-cinza hover:bg-grullo hover:scale-105 border-2 duration-500 ease-in-out border-grullo"><i class="fa-brands fa-whatsapp text-[1.5rem] mt-[20r]"></i> Entre em contato</a>
+                    <a href="" class="flex justify-center items-center gap-2 w-[18rem] h-[3rem] text-[1.125rem] font-raleway font-bold rounded-full text-preto hover:text-cinza bg-grullo hover:bg-ciano hover:scale-105 border-2 duration-500 ease-in-out border-ciano"><i class="fa-brands fa-whatsapp text-[1.5rem] mt-[20r]"></i> Entre em contato</a>
                 </div>
             </div>
         </section>
@@ -214,7 +214,7 @@
                             <a href="#"><img src="images/mm9.jpg" alt="" class="w-[250px] h-[180px] object-cover object-top rounded-xl hover:scale-105 duration-500 ease-in hover:hadow-md shadow-preto/80"></a>
                         </div>
                         <div class="absolute w-full h-full pointer-events-none flex justify-center  transition-opacity duration-500" id="foto-open"></div>
-                        <div id="foto-fade" class="absolute w-full h-full bg-black/80  opacity-0 pointer-events-none flex justify-center "></div>
+                        <div id="foto-fade" class="absolute w-full h-full bg-black/80 rounded-2xl  opacity-0 pointer-events-none flex justify-center "></div>
                     </div>
                 </div>
             </div>
@@ -245,8 +245,39 @@
             </form>
         </section>
     </main>
-    <footer>
-
+    <footer class="flex flex-col justify-center items-center w-full">
+        <div class="flex w-full justify-between px-[12rem]  py-[2rem] bg-preto ">
+            <div>
+                <div class="flex gap-4 py-4">
+                    <img src="images/logo.svg" alt="logo icone Mateus Messias" class="w-[2.5rem]">
+                    <img src="images/logotype.svg" alt="logo texto Mateus Messias" class="w-[10rem]">
+                </div>
+                <ul class="flex gap-3">
+                    <li><a href=""><i class="fa-brands fa-instagram text-[2rem] text-cinza hover:text-ciano duration-500 ease-in-out hover:scale-105"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook-square text-[2rem] text-cinza hover:text-ciano duration-500 ease-in-out hover:scale-105"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-tiktok text-[2rem] text-cinza hover:text-ciano duration-500 ease-in-out hover:scale-105"></i></a></li>
+                </ul>
+            </div>
+            <ul class="flex items-center justify-center text-[1.2rem] font-poppins font-normal gap-4">
+                <li><a href="" class="text-cinza hover:text-ciano duration-500 ease-in-out">Início</a></li>
+                <li><a href="" class="text-cinza hover:text-ciano duration-500 ease-in-out">Sobre</a></li>
+                <li><a href="" class="text-cinza hover:text-ciano duration-500 ease-in-out">Aulas</a></li>
+                <li><a href="" class="text-cinza hover:text-ciano duration-500 ease-in-out">Agenda</a></li>
+                <li><a href="" class="text-cinza hover:text-ciano duration-500 ease-in-out">Trabalhos</a></li>
+            </ul>
+            <div class="flex flex-col items-start justify-center gap-4">
+                <h4 class="text-cinza text-[1rem] font-poppins font-medium ">Inscreva-se para receber novidades no seu E-mail</h4>
+                <form action="">
+                    <label for="" class="hidden">newletter</label>
+                    <input type="email" placeholder="Digite seu email" class="w-[15rem] h-[2.5rem] bg-preto border-2 border-ciano placeholder:text-ciano focus:outline-none pl-2  text-cinza focus:bg-cinza/10">
+                    <button type="submit" class="bg-cinza text-[1rem] h-[2.5rem] w-[6rem] font-poppins font-medium hover:bg-ciano hover:text-[1.05rem] duration-500 ease-out">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="flex flex-col items-center bg-preto/70 w-full gap-1 py-2">
+            <p class="text-cinza text-[0.8rem] font-poppins font-normal">&copy; 2024 <span class="text-ciano font-semibold">Matheus Messias</span>. Todos os direitos reservados.</p>
+            <p class="text-cinza text-[0.8rem] font-poppins font-light">Desenvolvido por <a href="" class="text-grullo hover:underline">Tácio Würdig</a></p>
+        </div>
     </footer>
 </body>
 </html>

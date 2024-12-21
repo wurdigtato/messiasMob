@@ -53,7 +53,7 @@ thumbnails.forEach(thumbnails => {
         const imgSrc = thumbnails.src 
         
         fotoOpen.innerHTML = `
-                <img src="${imgSrc}" alt="Foto ampliada" class="max-w-full max-h-full rounded-lg z-20 ">
+                <img src="${imgSrc}" alt="Foto ampliada" class="max-w-full max-h-full rounded-2xl z-20 ">
                 <button onclick="closeFoto()" class="z-20 absolute top-5 right-5 text-white text-2xl bg-ciano/50 w-[2rem] h-[2rem] rounded-full"><i class="fa-solid fa-xmark"></i></button>
             `
 
